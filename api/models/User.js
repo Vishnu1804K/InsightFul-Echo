@@ -16,7 +16,7 @@ const UserSchema=new mongoose.Schema({
     },
     profilePic:{
         type:String,
-        default:""
+        default:"https://piyushheightsrwa.com/wp-content/uploads/2021/06/default-image.png"
     },
 },{timestamps:true});
 module.exports=mongoose.model("User",UserSchema);

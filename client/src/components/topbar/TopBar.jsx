@@ -9,13 +9,6 @@ export default function TopBar() {
   }
   return (
     <div className="top">
-      <div className="topLeft">
-        <i className="topIcon fa-brands fa-square-facebook"></i>
-        <i className="topIcon fa-brands fa-square-twitter"></i>
-        <i className="topIcon fa-brands fa-square-pinterest"></i>
-        <i className="topIcon fa-brands fa-square-instagram"></i>
-      </div>
-      <div className="topCenter">
         <ul className="topList">
             <li className="topListItem"><Link className='link' to="/">HOME</Link></li>
             <li className="topListItem"><Link className='link' to="/">ABOUT</Link></li>
@@ -23,7 +16,6 @@ export default function TopBar() {
             <li className="topListItem"><Link className='link' to="/write">WRITE</Link></li>
             <li className="topListItem"><Link className='link' to="/" onClick={handleLogout}>{user&& "LOGOUT" }</Link></li>
         </ul>
-      </div>
       <div className="topRight">
         {
           user?(

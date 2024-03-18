@@ -98,5 +98,22 @@ router.post("/",async (req,res)=>{
     }
   });
 
+  router.put("/:id/likes",async(req,res)=>{
+    try{
+      const post = new Post.findById(req.params.id);
+       if(!post.likes.includes(req.body.userId)){
+        await post.updateOne({$push : {likes:req.body.userId}})
+        res.status(200).json("liked it")
+       }
+       else{
+        await post.updateOne({$pull : {likes:req.body.userId}})
+        res.status(200).json("unliked it")
+       }
+    }
+    catch(err)
+    {
+      res.status(404).json(err)
+    }
+  })
 module.exports=router;
 

@@ -1,59 +1,79 @@
-.singlePost
-{
-    flex:9;
+
+.singlePost {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 700px; 
+  margin: 0 auto; 
+  padding: 20px;
 }
-.singlePostWrapper
-{
-    padding:20px;
-    padding-right:0;
+
+.singlePostWrapper {
+  background-color: #fff;
+  border-radius: 5px; 
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
 }
-.singlePostImg
-{
-    width:100%;
-    height:300px;
-    border-radius:3px;
-    object-fit:cover;
+
+.singlePostImg {
+  width: 100%;
+  max-width: 400px; 
+  height: auto;
+  object-fit: cover; 
+  border-radius: 5px; 
+  margin-bottom: 20px; 
 }
-.singlePostTitle
-{
-    text-align: center;
-    margin: 10px;
-    font-family: 'Lors',serif;
-    font-size: 28px;
+
+.singlePostTitle {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
 }
-.singlePostEdit
-{
-    float:right;
-    font-size:16px;
+
+.singlePostEdit {
+  display: flex;
+  float: right; 
 }
-.singlePostIcon
-{
-    margin-left:10px;
-    cursor:pointer;
+
+.singlePostIcon {
+  font-size: 18px;
+  cursor: pointer;
+  margin-left: 10px; 
+  color: #333; 
+  transition: color 0.2s ease-in-out; 
 }
-.singlePostIcon:first-child{
- color:teal;
+
+.singlePostIcon:hover {
+  color: #999; 
 }
-.singlePostIcon:last-child{
-    color:tomato;
+
+.singlePostInfo {
+  display: flex;
+  justify-content: space-between; 
+  margin-bottom: 15px;
 }
-.singlePostInfo
-{
-    margin-bottom:20px;
-    display:flex;
-    justify-content: space-between;
-    font-size: 16px;
-    font-family: 'Varela Round',sans-serif;
-    color:#b39656;
+
+.singlePostAuthor {
+  color: #aaa;
+  font-weight: bold;
 }
-.singlePostDesc
-{
-    color:#666;
-    font-size:18px;
+
+.singlePostDate {
+  color: #aaa;
+  font-style: italic;
 }
-.singlePostDesc::first-letter
-{
-    margin-left:20px;
-    font-size: 30px;
-    font-weight: 600;
+
+.link {
+  text-decoration: none;
+  color: inherit; 
+}
+
+.link:hover {
+  text-decoration: underline; 
+}
+
+.singlePostDesc {
+  font-size: 16px;
+  line-height: 1.5; 
 }

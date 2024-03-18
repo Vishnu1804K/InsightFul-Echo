@@ -8,6 +8,7 @@ const PostSchema=new mongoose.Schema({
     photo: {
         type: String,
         required: false,
+        default:"https://i.pinimg.com/564x/68/a9/d7/68a9d7ff43241336410315b1517fdcb6.jpg"
       },
     desc:{ 
         type:String,
